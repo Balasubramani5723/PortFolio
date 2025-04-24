@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Welcome Animation -->
+    <div class="welcome-overlay">
+        <video class="welcome-video" autoplay muted loop>
+            <source src="./assets/welcome.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="welcome-content">
+            <span class="welcome-text">Welcome to My Portfolio. <br /> Thanks Ror Wisting</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand">MyPortfolio</a>
+            <p id="liveClock"><span id="timePart"></span> | <span id="datePart"></span></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle-btn">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="home-title">Hi, I'm <span class="highlight">Balasubramani S</span></h1>
+                    <h2 class="home-subtitle">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="home-description">I create beautiful, functional websites with modern technologies.
+                        Passionate about coding and always eager to learn new things.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bala-s-a7ba28289/" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Balasubramani5723" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:balasubramani5723@gmail.com" class="social-link"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/thug_life_420_ff/?igshid=MzRlODBiNWFlZA%3D%3D"
+                            class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="BalasubramaniSResume.pdf" class="btn btn-download">Download CV</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="home-image-wrapper">
+                        <img src="assets/home.jpg" alt="Profile Image" class="home-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image-wrapper">
+                        <img src="assets/imG.png" alt="About Image" class="about-image">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="about-name">Balasubramani</h3>
+                    <p class="about-text">I'm a passionate web developer with expertise in front-end technologies. I
+                        love creating interactive and responsive websites that provide great user experiences.</p>
+                    <p class="about-text">With a strong foundation in HTML, CSS, JavaScript, and various frameworks, I
+                        can bring your ideas to life. I'm constantly learning and adapting to new technologies to stay
+                        ahead in this ever-evolving field.</p>
+                    <p class="about-text">When I'm not coding, you can find me exploring new design trends, contributing
+                        to open-source projects, or enjoying outdoor activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Education</span></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <h3 class="education-title">Higher Education</h3>
+                        <div class="education-item">
+                            <h4>Master's Degree</h4>
+                            <p>Bharathiyar University, <br> Rathinavel Subramaniam College of Arts and Science, <br> Sulur 2023-2025
+                                <br> Percentage - 60.49%</p></p>
+                        </div>
+                        <div class="education-item">
+                            <h4>Bachelor's Degree</h4>
+                            <p>Bharathiyar University, <br>Karuppannan Mariappan College of Arts and Science, <br> Kangeyam 2020-2023 <br> Percentage - 61.29%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <h3 class="education-title">School Education</h3>
+                        <div class="education-item">
+                            <h4>12th Standard</h4>
+                            <p>NCP MPL Boys Hr. Sec. School <br> Dharapuram - 2018-2020 <br> Percentage -  45.17%</p></p>
+                        </div>
+                        <div class="education-item">
+                            <h4>11th Standard</h4>
+                            <p>NCP MPL Boys Hr. Sec. School <br> Dharapuram - 2016-2018 <br> Percentage - 42%</p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-row">
+                    <!-- Frontend -->
+                    <div class="skill-category frontend-section">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <span class="skill-name">React.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+
+                <!-- Tools -->
+                <div class="skill-category tools-section">
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">Postman</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                  <!-- Backend -->
+                  <div class="skill-category backend-section">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+            <!-- Project Filter Tabs -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="html-css-js">HTML/CSS/JS</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="mern">MERN</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+            </div>
+
+            <div class="row project-container">
+                <!-- HTML/CSS/JS Projects -->
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/bg-remover.avif" alt="Background Remover" class="project-image">
+                        </div>
+                        <h3 class="project-title">BACKGROUND REMOVER</h3>
+                        <p class="project-description">Removes image backgrounds using HTML5 canvas and JavaScript.</p>
+                        <a href="https://github.com/Balasubramani5723/Background-Remover"
+                            class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/qr-code.avif" alt="Background Remover" class="project-image">
+                        </div>
+                        <h3 class="project-title">QR CODE GENERATOR</h3>
+                        <p class="project-description">Removes image backgrounds using HTML5 canvas and JavaScript.</p>
+                        <a href="https://github.com/Balasubramani5723/QR-Code-Generator"
+                            class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/music.avif" alt="Background Remover" class="project-image">
+                        </div>
+                        <h3 class="project-title">MUSIC PLAYER</h3>
+                        <p class="project-description">Removes image backgrounds using HTML5 canvas and JavaScript.</p>
+                        <a href="https://github.com/Balasubramani5723/QR-Code-Generator"
+                            class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/weather.avif" alt="Weather App" class="project-image">
+                        </div>
+                        <h3 class="project-title">WEATHER APP</h3>
+                        <p class="project-description">Shows live weather data for any city using a public API.</p>
+                        <a href="https://github.com/Balasubramani5723/Weather-App" class="btn btn-project">View
+                            Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/calculator.avif" alt="Calculator" class="project-image">
+                        </div>
+                        <h3 class="project-title">CALCULATOR</h3>
+                        <p class="project-description">Performs basic arithmetic with a clean, responsive UI.</p>
+                        <a href="https://github.com/Balasubramani5723/Calculator" class="btn btn-project">View
+                            Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/tic tac.avif" alt="Calculator" class="project-image">
+                        </div>
+                        <h3 class="project-title">TIC TAC</h3>
+                        <p class="project-description">Performs basic arithmetic with a clean, responsive UI.</p>
+                        <a href="https://github.com/Balasubramani5723/Tic-Tac-Game" class="btn btn-project">View
+                            Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/clock.avif" alt="Digital Clock" class="project-image">
+                        </div>
+                        <h3 class="project-title">DIGITAL CLOCK</h3>
+                        <p class="project-description">Display a real-time digital clock built with JavaScript.</p>
+                        <a href="https://github.com/Balasubramani5723/Digital-Clock"
+                            class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item" data-category="html-css-js">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/alarm.avif" alt="Alarm Clock" class="project-image">
+                        </div>
+                        <h3 class="project-title">ALARM CLOCK</h3>
+                        <p class="project-description">Lets users set alarms with sound and time alerts.</p>
+                        <a href="https://github.com/Balasubramani5723/Alarm"
+                            class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+
+                <!-- React Projects -->
+                <div class="col-md-4 project-item" data-category="react">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/todo.avif" alt="React Todo App" class="project-image">
+                        </div>
+                        <h3 class="project-title">TODO APP (React)</h3>
+                        <p class="project-description">A responsive todo application built with React and Material UI.
+                        </p>
+                        <a href="#" class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item" data-category="react">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/bank.avif" alt="React E-commerce" class="project-image">
+                        </div>
+                        <h3 class="project-title">BAD BANK</h3>
+                        <p class="project-description">Frontend e-commerce site with product filtering and cart
+                            functionality.</p>
+                        <a href="https://github.com/Balasubramani5723/Bad-Banks/tree/main" class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+
+                <!-- MERN Projects -->
+                <div class="col-md-4 project-item" data-category="mern">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/job.avif" alt="MERN Blog" class="project-image">
+                        </div>
+                        <h3 class="project-title">JOB PORTAL</h3>
+                        <p class="project-description">Full-stack job portal platform with user authentication and CRUD
+                            operations.</p>
+                        <a href="https://github.com/Balasubramani5723/Job-Nest" class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+                  <!-- games Projects -->
+                  <div class="col-md-4 project-item" data-category="games">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/fruits.avif" alt="games" class="project-image">
+                        </div>
+                        <h3 class="project-title">FRUIT GAME</h3>
+                        <p class="project-description">fruit Game platform with user play and enjoy game operations.</p>
+                        <a href="https://github.com/Balasubramani5723/Fruit-game" class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+                  <div class="col-md-4 project-item" data-category="games">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/memory-game.avif" alt="games" class="project-image">
+                        </div>
+                        <h3 class="project-title">MEMORY CARD GAME</h3>
+                        <p class="project-description">Memory card game platform with user interactive and best experience.</p>
+                        <a href="https://github.com/Balasubramani5723/Memory-Card-Game" class="btn btn-project">View Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-image-wrapper">
+                        <img src="assets/contact.avif" alt="Contact Image" class="contact-image">
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> balasubramani5723@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9025445174</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/bala-s-a7ba28289/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Balasubramani5723" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="mailto:balasubramani5723@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/thug_life_420_ff/?igshid=MzRlODBiNWFlZA%3D%3D" class="social-link"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; <span id="year"></span> Balasubramani. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
